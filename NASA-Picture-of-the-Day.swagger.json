@@ -1,0 +1,104 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "NASA - Picture of the Day",
+    "description": "One of the most popular websites at NASA is the Astronomy Picture of the Day. In fact, this website is one of the most popular websites across all federal agencies. This endpoint structures the APOD imagery and associated metadata so that it can be repurposed for other applications.",
+    "version": "1.0"
+  },
+  "host": "api.nasa.gov",
+  "basePath": "/planetary/apod",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "copyright": {
+                  "type": "string",
+                  "description": "copyright"
+                },
+                "date": {
+                  "type": "string",
+                  "description": "date"
+                },
+                "explanation": {
+                  "type": "string",
+                  "description": "explanation"
+                },
+                "media_type": {
+                  "type": "string",
+                  "description": "media_type"
+                },
+                "service_version": {
+                  "type": "string",
+                  "description": "service_version"
+                },
+                "thumbnail_url": {
+                  "type": "string",
+                  "description": "thumbnail_url"
+                },
+                "title": {
+                  "type": "string",
+                  "description": "title"
+                },
+                "url": {
+                  "type": "string",
+                  "description": "url"
+                },
+                "hdurl": {
+                  "type": "string",
+                  "description": "hdurl"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get NASA - Astronomy Picture of The Day",
+        "description": "Get NASA - Astronomy Picture of The Day",
+        "operationId": "GetAPOD",
+        "x-ms-visibility": "important",
+        "parameters": [
+          {
+            "name": "thumbs",
+            "in": "query",
+            "required": false,
+            "type": "boolean",
+            "default": true,
+            "description": "Return the URL of video thumbnail. If an APOD is not a video, this parameter is ignored.",
+            "x-ms-summary": "Return the URL of video thumbnail"
+          },
+          {
+            "name": "date",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "The date of the APOD image to retrieve. Format : YYYY-MM-DD. (leave blank to retrieve today's image)",
+            "x-ms-summary": "The date of the APOD image to retrieve. Format : YYYY-MM-DD. (leave blank to retrieve today's image)",
+            "x-ms-visibility": "important",
+            "format": ""
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "in": "query",
+      "name": "api_key"
+    }
+  },
+  "security": [],
+  "tags": []
+}
