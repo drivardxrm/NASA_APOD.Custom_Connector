@@ -80,8 +80,8 @@
             "in": "query",
             "required": false,
             "type": "string",
-            "description": "The date of the APOD image to retrieve. Format : YYYY-MM-DD. (leave blank to retrieve today's image)",
-            "x-ms-summary": "The date of the APOD image to retrieve. Format : YYYY-MM-DD. (leave blank to retrieve today's image)",
+            "description": "YYYY-MM-DD (Optional : leave blank to retrieve today's image)",
+            "x-ms-summary": "YYYY-MM-DD (Optional : leave blank to retrieve today's image)",
             "x-ms-visibility": "important",
             "format": ""
           }
