@@ -69,11 +69,12 @@
           {
             "name": "thumbs",
             "in": "query",
-            "required": false,
+            "required": true,
             "type": "boolean",
             "default": true,
             "description": "Return the URL of video thumbnail. If an APOD is not a video, this parameter is ignored.",
-            "x-ms-summary": "Return the URL of video thumbnail"
+            "x-ms-summary": "Return Video Thumbnail",
+            "x-ms-visibility": "internal"
           },
           {
             "name": "date",
@@ -81,7 +82,7 @@
             "required": false,
             "type": "string",
             "description": "YYYY-MM-DD (Optional : leave blank to retrieve today's image)",
-            "x-ms-summary": "YYYY-MM-DD (Optional : leave blank to retrieve today's image)",
+            "x-ms-summary": "Date",
             "x-ms-visibility": "important",
             "format": ""
           }
@@ -93,12 +94,16 @@
   "parameters": {},
   "responses": {},
   "securityDefinitions": {
-    "api_key": {
+    "API Key": {
       "type": "apiKey",
       "in": "query",
       "name": "api_key"
     }
   },
-  "security": [],
+  "security": [
+    {
+      "API Key": []
+    }
+  ],
   "tags": []
 }
