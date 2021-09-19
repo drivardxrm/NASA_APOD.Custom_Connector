@@ -23,4 +23,10 @@ Name your connection and enter your free API key
 
 ![image](https://user-images.githubusercontent.com/38399134/133945953-96437955-e917-45f7-8ece-8943d9ab7caa.png)
 
+The output of the action will look like this
+
+![image](https://user-images.githubusercontent.com/38399134/133946033-ecba1d63-486c-45ec-84ed-dab1050388f7.png)
+![image](https://user-images.githubusercontent.com/38399134/133946046-7bcc3746-6b6d-48c2-bdfd-5e2ee2b9d3fc.png)
+
+
 
