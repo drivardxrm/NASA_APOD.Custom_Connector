@@ -28,5 +28,10 @@ The output of the action will look like this
 ![image](https://user-images.githubusercontent.com/38399134/133946033-ecba1d63-486c-45ec-84ed-dab1050388f7.png)
 ![image](https://user-images.githubusercontent.com/38399134/133946046-7bcc3746-6b6d-48c2-bdfd-5e2ee2b9d3fc.png)
 
+You can then use the output as you wish in your flow. 
+For example here the image and description are used to create an In-App notification
+
+![image](https://user-images.githubusercontent.com/38399134/133946142-96ef4d05-5405-4066-912f-b5059ca4d08c.png)
+
 
 
