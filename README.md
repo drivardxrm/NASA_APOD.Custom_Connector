@@ -19,3 +19,8 @@ Name your connection and enter your free API key
 
 ![nasa_apod_create2](https://user-images.githubusercontent.com/38399134/133869571-f695e652-ae20-4e77-90d5-f86fb3a297f9.png)
 
+(Optional) Choose the date of the image to retrieve. Leave blank to retrieve today's image.
+
+![image](https://user-images.githubusercontent.com/38399134/133945953-96437955-e917-45f7-8ece-8943d9ab7caa.png)
+
+
